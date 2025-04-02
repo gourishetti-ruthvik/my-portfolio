@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <style type="text/tailwindcss"></style>
+    <script src="https://kit.fontawesome.com/edc342caae.js" crossorigin="anonymous"></script>
+</head>
+<body >
+    <div id="header">
+        <div class="container">
+            <nav class="flex items-center justify-between flex-wrap max-w-full">
+                <img src="images/name.png" alt="Logo" class="logo w-36">
+                <ul class="font-semibold" id="side-menu">
+                    <li> <a href="#header">Home</a> </li>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#services">Services</a> </li>
+                    <li> <a href="#portfolio">Portfolio</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text text-right">
+                <p class="text-xl font-medium mb-4 mr-3">Front-End Developer</p>
+                <h1 class="text-5xl font-bold mr-3">Hi, I'm <span>Ruthvik</span><br/>  Gourishetti From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row flex justify-between flex-wrap">
+                <div class="about-col-1 shadow-xl shadow-gray-500/100">
+                    <img  src="images/bg-3.png" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="mt-7">A dedicated Front-End Web Developer with one year of experience in website development and design, specializing in HTML, CSS, and Bootstrap. Demonstrated expertise in creating responsive, user-friendly websites with a strong emphasis on performance and design. Key achievements include successfully completing an individual internship at NxtWave, where I developed a fully responsive clone of the Nxt-Talks website, and creating a website leveraging AI technology for the Foresight Energy project. Now seeking for an intern position at a forward-thinking organization, where I can apply my skills to contribute to innovative and user-centered digital solutions.</p>
+
+                    <div class="tab-titles flex">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab hidden" id="skills">
+                        <ul>
+                            <li><span>Web Development</span> <br> Designing Web Applications</li>
+                            <li><span>Coding</span> <br> Python Coding</li>
+                            <li><span>Cricket</span> <br> Right-hand All-Rounder</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents hidden" id="experience">
+                        <ul>
+                            <li><span>2025 - present</span> <br> Front-End Developer at NxtWave</li>
+                            <li><span>2024 - 2025</span> <br> Front-End Developer at NxtWave</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents hidden" id="education">
+                        <ul>
+                            <li><span>2023 - present</span> <br> KL University</li>
+                            <li><span>2019 - 2023</span> <br>Secondary Education from Sainik School Korukonda</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2 >Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, suscipit cumque voluptate iusto sequi harum?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Python Coder</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa dolor autem explicabo facilis impedit!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Front-End Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, est nobis! Corrupti error excepturi nemo.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="Portfolio 1">
+
+                    <div class="layer">
+                        <h3 class="font-bold text-2xl">Foresight-Energy</h3>
+                        <p>The Web-App is developed as a personal AI-Tools skill-learning projects. This was built when I attended a Mega-Workshop which was all about Generative 2.0 skills development.</p>
+                        <a href="https://foresight-energy.wegic.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="Portfolio 1">
+
+                    <div class="layer">
+                        <h3 class="font-bold text-2xl">Restaurent Foods</h3>
+                        <p>This is a basic Static-Website built while developing my basic Web-development skills under the guidance of NxtWave's CCBP 4.0 Academy.</p>
+                        <a href="https://restaufoods.ccbp.tech/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="Portfolio 1">
+
+                    <div class="layer">
+                        <h3 class="font-bold text-2xl">Finance Management System</h3>
+                        <p>A Python Full-Stack Application developed using Python with Django Framework which was built as a College Course Project.</p>
+                        <a href="https://2300030312beshu.pythonanywhere.com" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn transition duration-[0.5s] hover:bg-[#ff004f]">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row contact-row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> gourishettiruthvik@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 7842453961</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/gourishettiruthvik" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/gourishetti-ruthvik" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100081710606511" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ruthvik_gourishetti/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/CV.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Ruthvik. All Rights Reserved.</p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("side-menu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
